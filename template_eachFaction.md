@@ -1,21 +1,17 @@
+XXX: Year/Month/Day, "DOCS: your descriptions of modifications"
+
+
 ### Contents
 
-1. [Update date](#update)
-2. [Features](#feats)
-3. [Advantages](#advantages)
-4. [To be prefect](#yourwork)
-5. [Representative theses](#representative)
-6. [To-dos](#to-dos)
+1. [Outstanding Features](#feats)
+2. [To be prefect](#yourwork)
+3. [Representative theses](#representatives)
 
-## Update date<a name="update"></a>
+## Outstanding Features<a name="feats"></a>
 
-XXX: 2019/3/28, "DOCS: your descriptions of modifications"
-
-## Features<a name="feats"></a>
-
-* your descriptions
-
-## Advantages<a name="advantages"></a>
+'''
+Overall descriptions here
+'''
 
 * `adjective(such as "little", "much")`, your descriptions
 
@@ -23,18 +19,18 @@ XXX: 2019/3/28, "DOCS: your descriptions of modifications"
 
 * `adjective(such as "little", "much")`, your descriptions
 
-## Representative theses<a name="representative"></a>
+## Representative theses<a name="representatives"></a>
 
 * adjective
-```
+
 [1] the formation of your citation here
 [2] ...
-```
 
-## To-dos<a name="to-dos"></a>
+<!-- 6. [To-dos](#to-dos) -->
+<!-- ## To-dos<a name="to-dos"></a>
 
 :memo: the overall descriptions of your first to-do
 
 * detail description
 
-* ...
+* ... -->
