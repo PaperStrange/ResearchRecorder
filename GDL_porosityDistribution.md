@@ -1,21 +1,17 @@
-### Contents
-
-1. [Update date](#update)
-2. [Features](#feats)
-3. [Advantages](#advantages)
-4. [To be prefect](#yourwork)
-5. [Representative theses](#representative)
-6. [To-dos](#to-dos)
-
-## Update date<a name="update"></a>
-
 HZQ: 2019/3/28, "DOCS: rearrange the structure"
 
-## Features<a name="feats"></a>
 
-* GDL porosity optimization by simulation or experiment to obtain homogeneous distribution of current density, liquid water (saturation, volume fraction etc.) or larger power output
+### Contents
 
-## Advantages<a name="advantages"></a>
+1. [Outstanding Features](#feats)
+2. [To be prefect](#yourwork)
+3. [Representative theses](#representative)
+
+## Outstanding Features<a name="feats"></a>
+
+'''
+GDL porosity optimization by simulation or experiment to obtain homogeneous distribution of current density, liquid water (saturation, volume fraction etc.) or larger power output
+'''
 
 * `much`, easier to do experiment validation(for some kind of distribution function)
 
@@ -49,12 +45,3 @@ HZQ: 2019/3/28, "DOCS: rearrange the structure"
 * most valuable
 
 [1] [2016 Huang, Yu-Xian;... Optimal design of polymer electrolyte ...](https://www.sciencedirect.com/science/article/pii/S0360544210004901?via%3Dihub)
-
-
-## To-dos<a name="to-dos"></a>
-
-:memo: the overall descriptions of your first to-do
-
-* detail description
-
-* ...
