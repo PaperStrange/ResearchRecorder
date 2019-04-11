@@ -38,6 +38,11 @@ Left to be added...
 
 :memo: Functions which is not for consideration for the moment
 
+* connection with online tools
+personalization
+
+* personalization
+
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
 This repository is distributed under the GNU license.
