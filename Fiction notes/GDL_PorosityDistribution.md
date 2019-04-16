@@ -3,11 +3,11 @@ HZQ: 2019/3/28, "DOCS: rearrange the structure"
 
 ### Contents
 
-1. [Outstanding Features](#feats)
-2. [To be prefect](#yourwork)
-3. [Representative theses](#representative)
+1. [Outstanding_Features](#feats)
+2. [To_be_prefect](#yourwork)
+3. [Representative_theses](#representative)
 
-## Outstanding Features<a name="feats"></a>
+## Outstanding_Features<a name="feats"></a>
 
 '''
 GDL porosity optimization by simulation or experiment to obtain homogeneous distribution of current density, liquid water (saturation, volume fraction etc.) or larger power output
@@ -19,7 +19,7 @@ GDL porosity optimization by simulation or experiment to obtain homogeneous dist
 
 * `maybe`, the potential to connect with AI algorithm on optimization field
 
-## To be prefect<a name="yourwork"></a>
+## To_be_prefect<a name="yourwork"></a>
 
 * `less`, less researches on 3D, multi phase condition (e.g. considerations with liquid water often use a 2D or 1D model)'
 
@@ -35,7 +35,7 @@ GDL porosity optimization by simulation or experiment to obtain homogeneous dist
 * `no`, no researches on the combination of Micro-PLV or the technical experimental method with the simulation or theory prediction
 
 
-## Representative theses<a name="representative"></a>
+## Representative_theses<a name="representative"></a>
 
 * most creative
 

@@ -3,11 +3,11 @@ XXX: Year/Month/Day, "DOCS: your descriptions of modifications"
 
 ### Contents
 
-1. [Outstanding Features](#feats)
-2. [To be prefect](#yourwork)
-3. [Representative theses](#representatives)
+1. [Outstanding_Features](#feats)
+2. [To_be_prefect](#yourwork)
+3. [Representative_theses](#representatives)
 
-## Outstanding Features<a name="feats"></a>
+## Outstanding_Features<a name="feats"></a>
 
 '''
 Overall descriptions here
@@ -15,11 +15,11 @@ Overall descriptions here
 
 * `adjective(such as "little", "much")`, your descriptions
 
-## To be prefect<a name="yourwork"></a>
+## To_be_prefect<a name="yourwork"></a>
 
 * `adjective(such as "little", "much")`, your descriptions
 
-## Representative theses<a name="representatives"></a>
+## Representative_theses<a name="representatives"></a>
 
 * adjective
 
