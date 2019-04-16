@@ -14,7 +14,7 @@ Section | Description |
 某某某，年/月/日 |
 *---补充区---* | 
 HZQ，2019/4/11 | 出发点：AI在PEMFC如何落地的尝试
- | 
+\>>> | \>>>
 *---点子2---* |
 全称 | 基于压损比重预测的输出功率优化方案
 关键词 | --
@@ -51,7 +51,8 @@ Section | Description |
 结论 | --
 结论1 | The effect of platinum gradient on the current density distribution strongly depends on the GDL porosity
 结论2 | The interaction of the gradients of platinum and GDL porosity, at middle and high current densities, demonstrates that the optimal platinum gradient is larger with lower initial platinum loading and GDL porosity at the cathode inlet.
-*---点子2（[most valuable[1]](GDL_PorosityDistribution.md##Representative theses)）---* |'
+\>>> | \>>>
+*---点子2（[most valuable[1]](./GDL_PorosityDistribution.md##Representative theses)）---* |'
 有价值的规律 | -- 
 规律1 | --
 优点（创意） | --
