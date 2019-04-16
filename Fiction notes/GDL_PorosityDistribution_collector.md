@@ -28,7 +28,7 @@ HZQ，2019/4/15 | 出发点：AI在PEMFC如何落地的尝试
 
 Section | Description |
 ------------ | -------------
-`点子1`（[most creative[1]](./GDL_PorosityDistribution.md##Representative_theses)） |
+`点子1`（[most creative[1]](./GDL_PorosityDistribution.md#Representative_theses)） |
 全称 | 阴极GDL孔隙率分布和CL的Pt含量的影响规律
 *---补充区---* | 
 有价值的规律 | -- 
