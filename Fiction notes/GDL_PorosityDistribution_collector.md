@@ -53,5 +53,6 @@ Section | Description |
 结论2 | The interaction of the gradients of platinum and GDL porosity, at middle and high current densities, demonstrates that the optimal platinum gradient is larger with lower initial platinum loading and GDL porosity at the cathode inlet.
 *---点子2（[most valuable[1]](GDL_PorosityDistribution.md##Representative theses)）---* |'
 有价值的规律 | -- 
+规律1 | --
 优点（创意） | --
 结论 | --
