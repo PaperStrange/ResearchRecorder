@@ -36,7 +36,7 @@ Section1 |  Section2 | Description |
 规律4 | porosity_CL | it is believed that the region of the CL adjacent to the GDL should be more porous than that near the membrane, as the oxygen concentration decreases within the CL from the GDL-CL interface towards the CL-membrane interface
 规律5 | mechanism_interaction | the current density uniformity is hard to achieve by applying the graded design individually considered platinum and GDL porosity, especially with high initial platinum loading and GDL porosity at the cathode inlet
 优点（创意） |
-优点1 | -- | the standard variance between the non-uniform spatial current density along the GDL-CL interface and the current density at the cathode inlet is defined as "sv", then divide "sv" by "$$i_{L}$$" to obtain the normalized variation
+优点1 | -- | the standard variance between the non-uniform spatial current density along the GDL-CL interface and the current density at the cathode inlet is defined as "sv", then divide "sv" by "i_{L}" to obtain the normalized variation
 优点2 | -- | Effectiveness factor (a parameter of agglomerate model) is used to quantitatively describe the effect of species transport on the overall reaction rate, which is defined as the ratio of practical reaction rate (under the effect of species transport) over the intrinsic reaction rate (without the effect of species transport).
 结论 | 
 结论1 | -- | The effect of platinum gradient on the current density distribution strongly depends on the GDL porosity
@@ -53,3 +53,15 @@ Section1 |  Section2 | Description |
 结论 | 
 结论1 | -- | the improvement in the current density with the interdigitated channel design is not significant because this design itself already produces a relatively high current density and hence, a porosity gradient formed in GDL leads to only a very small improvement while the pressure drop caused by this design can be remarkably reduced
 结论2 | -- | for parallel channel design and z-serpentine channel design, an appreciable increase in the limiting current density is also observed. Besides, the porosity gradient effectively improves the capillary diffusivity which increases the removal of water from the gas diffusion layers
+\>>> | \>>>
+`点子3`（来源：[most valuable[2]](./GDL_PorosityDistribution.md#Representative_theses)） |
+全称 |  | 阴极GDL孔隙率分布的影响
+有价值的规律 |
+规律1 | -- | apart from a continuous porosity, whose distribution mathematically provides the most flexibility to meet a desired uniformity of local current density variation, it is often convenient in practice to fabricate GDLs with discrete regions of piecewise constant porosity distribution *PS: research results here suggested that it may be sufficient to use a piecewise constant porosity GDL in practice*
+规律2 | -- | the reactant gases required for chemical reactions at high cell voltages are less than that consumed at low cell voltages and hence variation in the reactant gases concentration is also smaller along the channel for higher cell voltages
+优点（创意） |
+优点1 | -- | by mathematically describing constraints and optimized target power density of each selected operation points `respectively`, optimization equations were solved using the `Nelder-Mead Simplex` method combined with a numerical simulation model of PEM fuel cell to satisfy both the objective function and the constraints
+结论 | 
+结论1 | -- | cell performance and optimum porosity distribution are similar for the continuous or discrete porosity distributions and that a discrete variation of porosity may be used in practice just as effectively
+结论2 | -- | for E_{cell}=0.50V the local current density decreases monotonically along the channel since the variation of the porosity is smaller and the effect of the decreasing species concentration dominates the local current density distribution along the entire channel
+结论3 | -- | the optimum porosity was found to decrease with increase in temperature, and increase with increase with cell voltage, uniformity criterion, cathode mass flow rate and cathode relative humidity, whereas a non-monotonic relationship was observed with the changes in the operating pressure
