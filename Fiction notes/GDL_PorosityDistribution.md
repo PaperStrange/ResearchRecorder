@@ -1,5 +1,6 @@
 HZQ: 2019/3/28, "DOCS: rearrange the structure"
 
+HZQ: 2019/4/17, "DOCS: add another valuable these"
 
 ### Contents
 
@@ -39,9 +40,11 @@ GDL porosity optimization by simulation or experiment to obtain homogeneous dist
 
 * most creative
 
-[1] [2018 Xing, Lei; Wang, Yan .... Homogenization of current density of ...](https://www.sciencedirect.com/science/article/pii/S0009250918305980?via%3Dihub)
+[1] [2018 Xing, Lei; Wang et.al. Homogenization of current density of PEM fuel cells by in-plane graded distributions of platinum loading and GDL porosity](https://www.sciencedirect.com/science/article/pii/S0009250918305980?via%3Dihub)
 
 
 * most valuable
 
-[1] [2016 Huang, Yu-Xian;... Optimal design of polymer electrolyte ...](https://www.sciencedirect.com/science/article/pii/S0360544210004901?via%3Dihub)
+[1] [2016 Huang, Yu-Xian et.al. Effects of porosity gradient in gas diffusion layers on performance of proton exchange membrane fuel cells](https://www.sciencedirect.com/science/article/pii/S0360544210004901?via%3Dihub)
+
+[2] [Zhang Y, Verma A, Pitchumani R. Optimum design of polymer electrolyte membrane fuel cell with graded porosity gas diffusion layer](https://www.sciencedirect.com/science/article/pii/S0360319915315536?via%3Dihub)
