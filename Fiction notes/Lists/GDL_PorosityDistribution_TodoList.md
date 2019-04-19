@@ -1,6 +1,10 @@
-:memo: Lists 2019/4/17:
+:memo: Lists 2019/4/19:
 
 * 在网独基础上验证文献中孔隙率分布的效果
+
+resources | genre | descriptions
+------------ | ------------- | -------------
+reference_theses | concept | linke [here](http://jes.ecsdl.org/content/147/7/2468): `effective porosity` was employed to account for the fact that the pores may be partially filled with liquid water.
 
 * 找到合适的衡量流动方向上电流密度的量化指标
 
@@ -10,7 +14,7 @@
 
 resources | genre | descriptions
 ------------ | ------------- | -------------
-reference these | original_paper | link [here](https://pdfs.semanticscholar.org/da24/280dfcd767524fb1a1702f50f388ca0d4082.pdf) 
+reference_these | original_paper | link [here](https://pdfs.semanticscholar.org/da24/280dfcd767524fb1a1702f50f388ca0d4082.pdf) 
 codes | python | github repo link [here](https://github.com/fchollet/nelder-mead/blob/master/nelder_mead.py)
 codes | python_package | scipy, introduction [here](https://blog.csdn.net/zhoudi2010/article/details/54584495)
 
