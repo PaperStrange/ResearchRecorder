@@ -1,14 +1,14 @@
-:memo: Lists 2019/4/19:
+:memo: 在网独基础上验证文献中孔隙率分布的效果
 
-* 在网独基础上验证文献中孔隙率分布的效果
+:memo: 找到优化指标
 
-resources | genre | descriptions
------------- | ------------- | -------------
-reference_theses | concept | linke [here](http://jes.ecsdl.org/content/147/7/2468): `effective porosity` was employed to account for the fact that the pores may be partially filled with liquid water.
+:pencil: 可量化的电流密度分布
 
-* 找到合适的衡量流动方向上电流密度的量化指标
+:pencil: 可量化的水含量/水饱和度分布
 
-* 找到一种寻找两处GDL孔隙率最优排布的算法
+:pencil: 不同电流密度区间的输出功率
+
+:memo: 找到一种寻找GDL孔隙率最优排布的算法
 
 :pencil: Nelder-Mead Simplex
 
