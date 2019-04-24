@@ -1,7 +1,18 @@
-:memo: Lists 2019/4/15:
+:memo: Lists 2019/4/17:
 
 * 在网独基础上验证文献中孔隙率分布的效果
 
 * 找到合适的衡量流动方向上电流密度的量化指标
 
 * 找到一种寻找两处GDL孔隙率最优排布的算法
+
+:pencil: Nelder-Mead Simplex
+
+resources | genre | descriptions
+------------ | ------------- | -------------
+reference these | original_paper | link [here](https://pdfs.semanticscholar.org/da24/280dfcd767524fb1a1702f50f388ca0d4082.pdf) 
+codes | python | github repo link [here](https://github.com/fchollet/nelder-mead/blob/master/nelder_mead.py)
+codes | python_package | scipy, introduction [here](https://blog.csdn.net/zhoudi2010/article/details/54584495)
+
+:pencil: ...
+
