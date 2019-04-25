@@ -1,6 +1,14 @@
 <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
 
-### Cross-Subject
+HZQ: 2019/4/23, "DOCS: add arrangement structure"
+
+### Table of Contents
+
+1. [Cross-Subject](#cross)
+2. [Within-Subject](#within)
+3. [Fragments](#fragments)
+
+## Cross-Subject <a name="cross"></a>
 
 Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
@@ -22,7 +30,7 @@ HZQ，2019/4/11 |  -- | 出发点：AI在PEMFC如何落地的尝试
 *---补充区---* |
 HZQ，2019/4/15 | -- | 出发点：AI在PEMFC如何落地的尝试
 
-### Within Subject
+## Within Subject <a name="within"></a>
 
 Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
@@ -65,3 +73,9 @@ Section1 |  Section2 | Description |
 结论1 | -- | cell performance and optimum porosity distribution are similar for the continuous or discrete porosity distributions and that a discrete variation of porosity may be used in practice just as effectively
 结论2 | -- | for E_{cell}=0.50V the local current density decreases monotonically along the channel since the variation of the porosity is smaller and the effect of the decreasing species concentration dominates the local current density distribution along the entire channel
 结论3 | -- | the optimum porosity was found to decrease with increase in temperature, and increase with increase with cell voltage, uniformity criterion, cathode mass flow rate and cathode relative humidity, whereas a non-monotonic relationship was observed with the changes in the operating pressure
+
+## Fragments <a name="fragments"></a>
+
+piece | source_genre | descriptions
+------------ | ------------- | -------------
+"effective porosity" | paper | link [here](http://jes.ecsdl.org/content/147/7/2468): effective porosity was employed to account for the fact that the pores may be partially filled with liquid water.
