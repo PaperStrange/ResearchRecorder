@@ -4,7 +4,11 @@
 
 :pencil: 可量化的电流密度分布
 
-:pencil: 可量化的水含量/水饱和度分布
+:pencil: 可量化的水分布
+
+resources | genre | descriptions
+------------ | ------------- | -------------
+reference_these | original_paper | `several liquid water characterizations`, link [here](https://www.sciencedirect.com/science/article/pii/S019689041730746X) 
 
 :pencil: 不同电流密度区间的输出功率
 
