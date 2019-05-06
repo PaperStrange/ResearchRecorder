@@ -1,0 +1,1336 @@
+\documentclass[UFT8]{ctexbook} % Default font size and left-justified equations
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	PACKAGES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usepackage[top=3cm,bottom=3cm,left=3cm,right=3cm,headsep=10pt,a4paper]{geometry} % Page margins
+\usepackage{graphicx} % Required for including pictures
+\usepackage{lipsum} % Inserts dummy text
+\usepackage{subfig}
+\usepackage{tikz} % Required for drawing custom shapes
+
+%\usepackage[english]{babel} % English language/hyphenation
+
+\usepackage{enumitem} % Customize lists
+\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+
+\usepackage{booktabs} % Required for nicer horizontal rules in tables
+
+%\usepackage{sagetex}
+
+\usepackage{subfiles} % Required for use with SageMath Cloud
+
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{0,126,196} % Define the orange color used for highlighting throughout the book
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{textcomp} %摄氏度符号
+\usepackage{ccmap} %pdf中文复制
+\usepackage{subfig}
+%\usepackage{CTEX}
+%\usepackage{CJK}
+%\usepackage{CJKutf8}
+\usepackage{pythonhighlight}
+%\usepackage{subfigure}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	MATHEMATICS SETTINGS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usepackage{
+amsmath,
+amssymb,
+amsfonts,
+amsthm,
+cancel,
+colortbl,
+longtable,
+pdflscape,
+setspace,
+mathtools,
+pgfplots
+}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	STOCKHOLMS COLOR THEME 20151012-071009
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+%== BLUE
+	\definecolor{sthlmLightBlue}{RGB}{214,237,252} % HEX #d6edfc
+		\newcommand{\csthlmLightBlue}[1]{{\color{sthlmLightBlue}{#1}}}
+	\definecolor{sthlmBlue}{RGB}{0,110,191} % HEX #006ebf
+		\newcommand{\csthlmBlue}[1]{{\color{sthlmBlue}{#1}}}
+	%\definecolor{sthlmDarkBlue}{RGB}{} %HEX #
+		%\newcommand{\csthlmDarkBlue}[1]{{\color{sthlmDarkBlue}{#1}}}
+
+%== GREEN
+
+	\definecolor{sthlmLightGreen}{RGB}{213,247,244} % HEX #0d5f7f4
+		\newcommand{\csthlmLightGreen}[1]{{\color{sthlmLightGreen}{#1}}}
+	\definecolor{sthlmGreen}{RGB}{0,134,127} % #00867f
+		\newcommand{\csthlmGreen}[1]{{\color{sthlmGreen}{#1}}}
+
+%== GREY
+	%\definecolor{sthlmLightGrey}{RGB}{}
+		%\newcommand{\csthlmLightGrey}[1]{{\color{sthlmLightGrey}{#1}}}
+	\definecolor{sthlmGrey}{RGB}{245,243,238} % HEX #f5f3ee
+		\newcommand{\csthlmGrey}[1]{{\color{sthlmGrey}{#1}}}
+	\definecolor{sthlmDarkGrey}{RGB}{51,51,51} % HEX #333333
+		\newcommand{\csthlmDarkGrey}[1]{{\color{sthlmDarkGrey}{#1}}}
+
+%== ORANGE
+	\definecolor{sthlmLightOrange}{RGB}{255,215,210} % HEX #ffd7d2
+		\newcommand{\csthlmLightOrange}[1]{{\color{sthlmLightOrange}{#1}}}
+	\definecolor{sthlmOrange}{RGB}{221,74,44} % HEX #dd4a2c
+		\newcommand{\csthlmOrange}[1]{{\color{sthlmOrange}{#1}}}
+
+%== PURPLE
+
+	\definecolor{sthlmLightPurple}{RGB}{241,230,252} % HEX #f1e6fc
+		\newcommand{\csthlmLightPurple}[1]{{\color{sthlmLightPurple}{#1}}}
+	\definecolor{sthlmPurple}{RGB}{93,35,125} % HEX #5d237d
+		\newcommand{\csthlmPurple}[1]{{\color{sthlmPurple}{#1}}}
+
+%== RED
+
+	\definecolor{sthlmLightRed}{RGB}{254,222,237} % HEX #c40064
+		\newcommand{\csthlmLightRed}[1]{{\color{sthlmLightRed}{#1}}}
+	\definecolor{sthlmRed}{RGB}{196,0,100} % HEX #fedeed
+		\newcommand{\csthlmRed}[1]{{\color{sthlmRed}{#1}}}
+	%\definecolor{sthlmDarkRed}{RGB}{} % HEX #
+		%\newcommand{\csthlmDarkRed}[1]{{\color{sthlmDarkRed}{#1}}}
+
+%== YELLOW
+
+	%\definecolor{sthlmLightYellow}{RGB}{}
+		%\newcommand{\csthlmLightYellow}[1]{{\color{sthlmLightYellow}{#1}}}
+	\definecolor{sthlmYellow}{RGB}{252,191,10} % HEX #fcbf0a
+		\newcommand{\csthlmYellow}[1]{{\color{sthlmYellow}{#1}}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	ISSR COLORS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+%== BLUE
+	\definecolor{issrBlue}{RGB}{0,111,174} % HEX #0066cc
+		\newcommand{\cissrBlue}[1]{{\color{issrBlue}{#1}}}
+
+%== GREY
+	\definecolor{issrGrey}{RGB}{167,169,172} % HEX #999999
+		\newcommand{\cissrGrey}[1]{{\color{issrGrey}{#1}}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	GLOBAL COLOR THEME
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+%== BLUE
+
+	\newcommand{\cLightBlue}[1]{{\color{sthlmLightBlue}{#1}}}
+	\newcommand{\crLightBlue}{\color{sthlmLightBlue}}
+	\newcommand{\cnLightBlue}{sthlmLightBlue}
+	\newcommand{\cBlue}[1]{{\color{sthlmBlue}{#1}}}
+	\newcommand{\crBlue}{\color{sthlmBlue}}
+	\newcommand{\cnBlue}{sthlmBlue}
+	%\newcommand{\cDarkBlue}[1]{{\color{}{#1}}}
+	%\newcommand{\crDarkBlue}{\color{}}
+	%\newcommand{\cnDarkBlue}{}
+
+%== GREEN
+
+	%\newcommand{\cLightGreen}[1]{{\color{}{#1}}}
+	%\newcommand{\crLightGreen}{\color{}}
+	\newcommand{\cnLightGreen}{sthlmLightGreen}
+	\newcommand{\cGreen}[1]{{\color{sthlmGreen}{#1}}}
+	\newcommand{\crGreen}{\color{sthlmGreen}}
+	\newcommand{\cnGreen}{sthlmGreen}
+	%\newcommand{\cDarkGreen}[1]{{\color{}{#1}}}
+	%\newcommand{\crDarkGreen}{\color{}}
+	%\newcommand{\cnDarkGreen}{sthlmDarkGreen}
+
+%== GREY
+
+	\newcommand{\cLightGrey}[1]{{\color{sthlmLightGrey}{#1}}}
+	\newcommand{\crLightGrey}{\color{sthlmLightGrey}}
+	\newcommand{\cnLightGrey}{sthlmLightGrey}
+	\newcommand{\cGrey}[1]{{\color{sthlmGrey}{#1}}}
+	\newcommand{\crGrey}{\color{sthlmGrey}}
+	\newcommand{\cnGrey}{sthlmGrey}
+	\newcommand{\cDarkGrey}[1]{{\color{sthlmDarkGrey}{#1}}}
+	\newcommand{\crDarkGrey}{\color{sthlmDarkGrey}}
+	\newcommand{\cnDarkGrey}{sthlmDarkGrey}
+
+%== ORANGE
+
+	\newcommand{\cLightOrange}[1]{{\color{sthlmLightOrange}{#1}}}
+	\newcommand{\crLightOrange}{\color{sthlmLightOrange}}
+	\newcommand{\cnLightOrange}{sthlmLightOrange}
+	\newcommand{\cOrange}[1]{{\color{sthlmOrange}{#1}}}
+	\newcommand{\crOrange}{\color{sthlmOrange}}
+	\newcommand{\cnOrange}{sthlmOrange}
+	%\newcommand{\cDarkOrange}[1]{{\color{}{#1}}}
+	%\newcommand{\crDarkOrange}{\color{}}
+	%\newcommand{\cnDarkOrange}{}
+
+%== PURPLE
+
+	\newcommand{\cLightPurple}[1]{{\color{sthlmLightPurple}{#1}}}
+	\newcommand{\crLightPurple}{\color{sthlmLightPurple}}
+	\newcommand{\cnLightPurple}{sthlmLightPurple}
+	\newcommand{\cPurple}[1]{{\color{sthlmPurple}{#1}}}
+	\newcommand{\crPurple}{\color{sthlmPurple}}
+	\newcommand{\cnPurple}{sthlmPurple}
+	%\newcommand{\cDarkPurple}[1]{{\color{}{#1}}}
+	%\newcommand{\crDarkPurple}{\color{}}
+	%\newcommand{\cnDarkPurple}{}
+
+%== RED
+
+	\newcommand{\cLightRed}[1]{{\color{sthlmLightRed}{#1}}}
+	\newcommand{\crLightRed}{\color{sthlmLightRed}}
+	\newcommand{\cnLightRed}{sthlmLightRed}
+	\newcommand{\cRed}[1]{{\color{sthlmRed}{#1}}}
+	\newcommand{\crRed}{\color{sthlmRed}}
+	\newcommand{\cnRed}{sthlmRed}
+	\newcommand{\cDarkRed}[1]{{\color{sthlmDarkRed}{#1}}}
+	\newcommand{\crDarkRed}{\color{sthlmDarkRed}}
+	\newcommand{\cnDarkRed}{sthlmDarkRed}
+
+%== YELLOW
+
+	%\newcommand{\cLightYellow}[1]{{\color{}{#1}}}
+	%\newcommand{\crLightYellow}{\color{}}
+	%\newcommand{\cnLightYellow}{sthlmLightYellow}
+	\newcommand{\cYellow}[1]{{\color{sthlmYellow}{#1}}}
+	\newcommand{\crYellow}{\color{sthlmYellow}}
+	\newcommand{\cnYellow}{sthlmYellow}
+	%\newcommand{\cDarkYellow}[1]{{\color{}{#1}}}
+	%\newcommand{\crDarkYellow}{\color{}}
+	%\newcommand{\cnDarkYellow}{}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	GLOBAL UNITS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+\newcommand{\doneit}{\textcolor{sthlmRed}{$\odot$}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	GLOBAL MATH 20151012-065906
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\newcommand{\limit}{\displaystyle\lim}
+\newcommand{\impart}{\textrm{Im}}
+\newcommand{\repart}{\textrm{Re}}
+\newcommand{\naturalnum}{\mathbb{N}}
+\newcommand{\integernum}{\mathbb{Z}}
+\newcommand{\rationalnum}{\mathbb{Q}}
+\newcommand{\realnum}{\mathbb{R}}
+\newcommand{\complexnum}{\mathbb{C}}
+\newcommand{\degree}{\ensuremath{{}^{\circ}}\xspace}
+%\newcommand{\degree}{^{\circ}} Depricated by above
+\newcommand{\rad}{\unit{rad}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\dx}{\mathrm{d}x}
+\newcommand{\dy}{\mathrm{d}y}
+\newcommand{\dr}{\mathrm{d}r}
+\newcommand{\dtheta}{\mathrm{d}\theta}
+\newcommand{\ddx}{\dfrac{\mathrm{d}}{\mathrm{d}x}}
+\newcommand{\dydx}{\dfrac{\mathrm{d}y}{\mathrm{d}x}}
+\newcommand{\dydt}{\dfrac{\mathrm{d}y}{\mathrm{d}t}}
+\newcommand{\dydu}{\dfrac{\mathrm{d}y}{\mathrm{d}u}}
+\newcommand{\dudx}{\dfrac{\mathrm{d}u}{\mathrm{d}x}}
+\newcommand{\dxdt}{\dfrac{\mathrm{d}x}{\mathrm{d}t}}
+\newcommand{\decf}{\cRed{$\searrow$}}
+\newcommand{\incf}{\cGreen{$\nearrow$}}
+\newcommand{\stationary}{$\longrightarrow$}
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\farg}[1]{\left[\cBlue{\boldsymbol{#1}}\right]}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\sname}[1]{\texttt{#1}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\cb}{$\Box$}
+\newcommand{\suchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;}
+\newcommand{\chide}[1]{{\color{sthlmDarkGrey}{#1}}}
+\newcommand{\lesssteps}{\cGreen{\textbf{Less Steps Solution:}}}
+\newcommand{\solnsteps}{\cGreen{\textbf{Solution:}}}
+\newcommand{\qdependlist}{\cDarkGrey{\textbf{Dependencies:}}}
+\newcommand{\ihat}{\hat{\imath}}
+\newcommand{\jhat}{\hat{\jmath}}
+\newcommand{\khat}{\hat{k}}
+\DeclareMathOperator{\lcm}{lcm}
+
+\newcommand{\alert}[1]{{\color{sthlmRed}{#1}}}
+\newcommand{\mathref}[1]{{\color{sthlmPurple}{#1}}}
+\newcommand{\cellyes}{\cellcolor{sthlmGreen!30}Yes}
+\newcommand{\cellno}{\cellcolor{sthlmRed!30}No}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	MAIN TABLE OF CONTENTS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usepackage{titletoc} % Required for manipulating the table of contents
+
+\contentsmargin{0cm} % Removes the default margin
+
+% Part text styling
+\titlecontents{part}[0cm]
+{\addvspace{20pt}\centering\large\bfseries}
+{}
+{}
+{}
+
+% Chapter text styling
+\titlecontents{chapter}[1.25cm] % Indentation
+{\addvspace{12pt}\large\sffamily\bfseries} % Spacing and font options for chapters
+{\color{ocre!60}\contentslabel[\Large\thecontentslabel]{1.25cm}\color{ocre}} % Chapter number
+{\color{ocre}}
+{\color{ocre!60}\normalsize\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+
+% Section text styling
+\titlecontents{section}[1.25cm] % Indentation
+{\addvspace{3pt}\sffamily\bfseries} % Spacing and font options for sections
+{\contentslabel[\thecontentslabel]{1.25cm}} % Section number
+{}
+{\hfill\color{black}\thecontentspage} % Page number
+[]
+
+% Subsection text styling
+\titlecontents{subsection}[1.25cm] % Indentation
+{\addvspace{1pt}\sffamily\small} % Spacing and font options for subsections
+{\contentslabel[\thecontentslabel]{1.25cm}} % Subsection number
+{}
+{\ \titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+[]
+
+% List of figures
+\titlecontents{figure}[0em]
+{\addvspace{-5pt}\sffamily}
+{\thecontentslabel\hspace*{1em}}
+{}
+{\ \titlerule*[.5pc]{.}\;\thecontentspage}
+[]
+
+% List of tables
+\titlecontents{table}[0em]
+{\addvspace{-5pt}\sffamily}
+{\thecontentslabel\hspace*{1em}}
+{}
+{\ \titlerule*[.5pc]{.}\;\thecontentspage}
+[]
+
+%----------------------------------------------------------------------------------------
+%	MINI TABLE OF CONTENTS IN PART HEADS
+%----------------------------------------------------------------------------------------
+
+% Chapter text styling
+\titlecontents{lchapter}[0em] % Indenting
+{\addvspace{15pt}\large\sffamily\bfseries} % Spacing and font options for chapters
+{\color{ocre}\contentslabel[\Large\thecontentslabel]{1.25cm}\color{ocre}} % Chapter number
+{}
+{\color{ocre}\normalsize\sffamily\bfseries\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+
+% Section text styling
+\titlecontents{lsection}[0em] % Indenting
+{\sffamily\small} % Spacing and font options for sections
+{\contentslabel[\thecontentslabel]{1.25cm}} % Section number
+{}
+{}
+
+% Subsection text styling
+\titlecontents{lsubsection}[.5em] % Indentation
+{\normalfont\footnotesize\sffamily} % Font settings
+{}
+{}
+{}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	PAGE HEADINGS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usepackage{fancyhdr} % Required for header and footer configuration
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\chaptername\ \thechapter.\ #1}{}} % Chapter text font settings
+\renewcommand{\sectionmark}[1]{\markright{\sffamily\normalsize\thesection\hspace{5pt}#1}{}} % Section text font settings
+\fancyhf{} \fancyhead[LE,RO]{\sffamily\normalsize\thepage} % Font setting for the page number in the header
+\fancyhead[LO]{\rightmark} % Print the nearest section name on the left side of odd pages
+\fancyhead[RE]{\leftmark} % Print the current chapter name on the right side of even pages
+\renewcommand{\headrulewidth}{0.5pt} % Width of the rule under the header
+\addtolength{\headheight}{2.5pt} % Increase the spacing around the header slightly
+\renewcommand{\footrulewidth}{0pt} % Removes the rule in the footer
+\fancypagestyle{plain}{\fancyhead{}\renewcommand{\headrulewidth}{0pt}} % Style for when a plain pagestyle is specified
+
+% Removes the header from odd empty pages at the end of chapters
+\makeatletter
+\renewcommand{\cleardoublepage}{
+\clearpage\ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+\thispagestyle{empty}
+\newpage
+\fi}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	THEOREM STYLES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newtheorem{notation}{Notation}[chapter]
+
+\newtheoremstyle{ocrenumbox}% % Theorem style name
+{0pt}% Space above
+{0pt}% Space below
+{\normalfont}% % Body font
+{}% Indent amount
+{\small\bf\sffamily\color{ocre}}% % Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+\renewcommand{\qedsymbol}{$\blacksquare$}% Optional qed square
+
+\newtheoremstyle{blacknumexa}% Theorem style Example
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% Body font
+{} % Indent amount
+{\small\bf\sffamily\color{sthlmGreen}}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\nobreakspace\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+
+\newtheoremstyle{blacknumexe}% Theorem style Exercise
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% Body font
+{} % Indent amount
+{\small\bf\sffamily\color{ocre}}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\nobreakspace\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+
+\newtheoremstyle{blacknumessential}% Theorem style name
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% Body font
+{} % Indent amount
+{\small\bf\sffamily\color{sthlmRed}}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\nobreakspace\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+
+\newtheoremstyle{blacknumpro}% Theorem style name properties
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% Body font
+{} % Indent amount
+{\small\bf\sffamily\color{sthlmPurple}}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\nobreakspace\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+
+\newtheoremstyle{blacknumbox} % Theorem style name
+{0pt}% Space above
+{0pt}% Space below
+{\normalfont}% Body font
+{}% Indent amount
+{\small\bf\sffamily}% Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries---\nobreakspace#3.}}% Optional theorem note
+
+% Non-boxed/non-framed environments
+\newtheoremstyle{ocrenum}% % Theorem style name
+{5pt}% Space above
+{5pt}% Space below
+{\normalfont}% % Body font
+{}% Indent amount
+{\small\bf\sffamily\color{ocre}}% % Theorem head font
+{\;}% Punctuation after theorem head
+{0.25em}% Space after theorem head
+{\small\sffamily\color{ocre}\thmname{#1}\nobreakspace\thmnumber{\@ifnotempty{#1}{}\@upn{#2}}% Theorem text (e.g. Theorem 2.1)
+\thmnote{\nobreakspace\the\thm@notefont\sffamily\bfseries\color{black}---\nobreakspace#3.}} % Optional theorem note
+\renewcommand{\qedsymbol}{$\blacksquare$}% Optional qed square
+\makeatother
+
+% Defines the theorem text style for each type of theorem to one of the three styles above
+\newcounter{dummy}
+\numberwithin{dummy}{section}
+\theoremstyle{ocrenumbox}
+\newtheorem{theoremeT}[dummy]{Theorem}
+\newtheorem{aruleT}[dummy]{Rule}
+\newtheorem{aidentityT}[dummy]{Identity}
+\newtheorem{problem}{Problem}[chapter]
+\theoremstyle{blacknumexe}
+\newtheorem{exerciseT}{Exercise}[chapter]
+\theoremstyle{blacknumexa}
+\newtheorem{exampleT}{Example}[chapter]
+\theoremstyle{blacknumessential}
+\newtheorem{essentialqT}{Essential Questions}[chapter]
+\theoremstyle{blacknumpro}
+\newtheorem{propertyT}[dummy]{Property}
+\theoremstyle{blacknumbox}
+\newtheorem{notationT}[dummy]{Notation}
+\theoremstyle{blacknumbox}
+\newtheorem{vocabulary}{Vocabulary}[chapter]
+\newtheorem{definitionT}{Definition}[section]
+\newtheorem{corollaryT}[dummy]{Corollary}
+\theoremstyle{ocrenum}
+\newtheorem{proposition}[dummy]{Proposition}
+
+%----------------------------------------------------------------------------------------
+%	DEFINITION OF COLORED BOXES
+%----------------------------------------------------------------------------------------
+
+\RequirePackage[framemethod=default]{mdframed} % Required for creating the theorem, definition, exercise and corollary boxes
+
+% Theorem box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+backgroundcolor=black!5,
+linecolor=ocre,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt,
+linewidth=2pt]{tBox}
+
+% Rule box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+backgroundcolor=black!5,
+linecolor=ocre,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt,
+linewidth=2pt]{arBox}
+
+% Identity box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+linecolor=gray,
+backgroundcolor=black!5,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt,
+linewidth=2pt]{idenBox}
+
+% Notation box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+backgroundcolor=sthlmOrange!5,
+linecolor=sthlmOrange,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt,
+linewidth=2pt]{notBox}
+
+% Definition box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+backgroundcolor=sthlmDarkGrey!5,
+linecolor=ocre,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt,
+linewidth=2pt]{dBox}
+
+% Property box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+backgroundcolor=sthlmDarkGrey!5,
+linecolor=sthlmPurple,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=5pt,
+linewidth=2pt]{prBox}
+
+% Exercise box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+backgroundcolor=ocre!5,
+linecolor=ocre,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt]{eBox}
+
+% Example box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+backgroundcolor=sthlmGreen!5,
+linecolor=sthlmGreen,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt]{exaBox}
+
+% Essential Question box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=false,
+topline=true,
+bottomline=true,
+backgroundcolor=sthlmRed!5,
+linecolor=sthlmRed,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt]{essentialqBox}
+
+% Corollary box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+linecolor=gray,
+backgroundcolor=black!5,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=5pt]{cBox}
+
+% Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
+\newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
+\newenvironment{arule}{\begin{arBox}\begin{aruleT}}{\end{aruleT}\end{arBox}}
+\newenvironment{aidentity}{\begin{idenBox}\begin{aidentityT}}{\end{aidentityT}\end{idenBox}}
+\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}
+\newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}
+\newenvironment{property}{\begin{prBox}\begin{propertyT}}{\end{propertyT}\end{prBox}}
+\newenvironment{notations}{\begin{notBox}\begin{notationT}}{\end{notationT}\end{notBox}}
+\newenvironment{example}{\begin{exaBox}\begin{exampleT}}{\hfill{\color{sthlmGreen}\tiny\ensuremath{\blacksquare}}\end{exampleT}\end{exaBox}}
+\newenvironment{essentialq}{\begin{essentialqBox}\begin{essentialqT}}{\end{essentialqT}\end{essentialqBox}}
+\newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}
+
+%----------------------------------------------------------------------------------------
+%	REMARK ENVIRONMENT
+%----------------------------------------------------------------------------------------
+
+\newenvironment{remark}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
+\begin{list}{}{
+\leftmargin=35pt % Indentation on the left
+\rightmargin=25pt}\item\ignorespaces % Indentation on the right
+\makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{R}};\end{tikzpicture}} % Orange R in a circle
+\advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
+
+\newcommand{\soln}[1]{\par\vspace{10pt}\makebox[15pt]{\begin{tikzpicture}[overlay]
+\node[draw=sthlmGreen!70,line width=1pt,circle,fill=sthlmGreen!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{sthlmGreen}{S}};\end{tikzpicture}}\cGreen{\noindent\hrulefill\vskip 15pt}}
+
+\newcommand{\qdepend}[1]{\par\vspace{10pt}\makebox[15pt]{\begin{tikzpicture}[overlay]
+\node[draw=sthlmDarkGrey!70,line width=1pt,circle,fill=sthlmDarkGrey!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{sthlmDarkGrey}{D}};\end{tikzpicture}}\cDarkGrey{\noindent\hrulefill\vskip 15pt}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	SECTION NUMBERING IN THE MARGIN
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\llap{\textcolor{ocre}{\csname the#1\endcsname}\hspace{1em}}}
+\renewcommand{\section}{\@startsection{section}{1}{\z@}
+{-4ex \@plus -1ex \@minus -.4ex}
+{1ex \@plus.2ex }
+{\normalfont\large\sffamily\bfseries}}
+\renewcommand{\subsection}{\@startsection {subsection}{2}{\z@}
+{-3ex \@plus -0.1ex \@minus -.4ex}
+{0.5ex \@plus.2ex }
+{\normalfont\sffamily\bfseries}}
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{\z@}
+{-2ex \@plus -0.1ex \@minus -.2ex}
+{.2ex \@plus.2ex }
+{\normalfont\small\sffamily\bfseries}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}
+{-2ex \@plus-.2ex \@minus .2ex}
+{.1ex}
+{\normalfont\small\sffamily\bfseries}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	PART HEADINGS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+% numbered part in the table of contents
+\newcommand{\@mypartnumtocformat}[2]{%
+\setlength\fboxsep{0pt}%
+\noindent\colorbox{ocre!20}{\strut\parbox[c][.7cm]{\ecart}{\color{ocre!70}\Large\sffamily\bfseries\centering#1}}\hskip\esp\colorbox{ocre!40}{\strut\parbox[c][.7cm]{\linewidth-\ecart-\esp}{\Large\sffamily\centering#2}}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% unnumbered part in the table of contents
+\newcommand{\@myparttocformat}[1]{%
+\setlength\fboxsep{0pt}%
+\noindent\colorbox{ocre!40}{\strut\parbox[c][.7cm]{\linewidth}{\Large\sffamily\centering#1}}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength\esp
+\setlength\esp{4pt}
+\newlength\ecart
+\setlength\ecart{1.2cm-\esp}
+\newcommand{\thepartimage}{}%
+\newcommand{\partimage}[1]{\renewcommand{\thepartimage}{#1}}%
+\def\@part[#1]#2{%
+\ifnum \c@secnumdepth >-2\relax%
+\refstepcounter{part}%
+\addcontentsline{toc}{part}{\texorpdfstring{\protect\@mypartnumtocformat{\thepart}{#1}}{\partname~\thepart\ ---\ #1}}
+\else%
+\addcontentsline{toc}{part}{\texorpdfstring{\protect\@myparttocformat{#1}}{#1}}%
+\fi%
+\startcontents%
+\markboth{}{}%
+{\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node at (current page.north west){\begin{tikzpicture}[remember picture,overlay]%
+\fill[ocre!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
+\node[anchor=north] at (4cm,-3.25cm){\color{ocre!40}\fontsize{220}{100}\sffamily\bfseries\@Roman\c@part};
+\node[anchor=south east] at (\paperwidth-1cm,-\paperheight+1cm){\parbox[t][][t]{8.5cm}{
+\printcontents{l}{0}{\setcounter{tocdepth}{1}}%
+}};
+\node[anchor=north east] at (\paperwidth-1.5cm,-3.25cm){\parbox[t][][t]{15cm}{\strut\raggedleft\color{white}\fontsize{30}{30}\sffamily\bfseries#2}};
+\end{tikzpicture}};
+\end{tikzpicture}}%
+\@endpart}
+\def\@spart#1{%
+\startcontents%
+\phantomsection
+{\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node at (current page.north west){\begin{tikzpicture}[remember picture,overlay]%
+\fill[ocre!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
+\node[anchor=north east] at (\paperwidth-1.5cm,-3.25cm){\parbox[t][][t]{15cm}{\strut\raggedleft\color{white}\fontsize{30}{30}\sffamily\bfseries#1}};
+\end{tikzpicture}};
+\end{tikzpicture}}
+\addcontentsline{toc}{part}{\texorpdfstring{%
+\setlength\fboxsep{0pt}%
+\noindent\protect\colorbox{ocre!40}{\strut\protect\parbox[c][.7cm]{\linewidth}{\Large\sffamily\protect\centering #1\quad\mbox{}}}}{#1}}%
+\@endpart}
+\def\@endpart{\vfil\newpage
+\if@twoside
+\if@openright
+\null
+\thispagestyle{empty}%
+\newpage
+\fi
+\fi
+\if@tempswa
+\twocolumn
+\fi}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	CHAPTER HEADINGS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+%\newcommand{\thechapterimage}{}%
+%\newcommand{\chapterimage}[1]{\renewcommand{\thechapterimage}{#1}}%
+\def\@makechapterhead#1{%
+{\parindent \z@ \raggedright \normalfont
+\ifnum \c@secnumdepth >\m@ne
+\if@mainmatter
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+%\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{\thechapterimage}};
+\draw[anchor=west] (\Gm@lmargin,-4cm) node [line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin+.3cm,-4cm) node {\huge\sffamily\bfseries\color{black}\thechapter. #1\strut};
+\end{tikzpicture}};
+\end{tikzpicture}
+\else
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+%\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{\thechapterimage}};
+\draw[anchor=west] (\Gm@lmargin,-4cm) node [line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin+.3cm,-4cm) node {\huge\sffamily\bfseries\color{black}#1\strut};
+\end{tikzpicture}};
+\end{tikzpicture}
+\fi\fi\par\vspace*{100\p@}}}
+
+%-------------------------------------------
+
+\def\@makeschapterhead#1{%
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+%\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{\thechapterimage}};
+\draw[anchor=west] (\Gm@lmargin,-4cm) node [line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin+.3cm,-4cm) node {\huge\sffamily\bfseries\color{black}#1\strut};
+\end{tikzpicture}};
+\end{tikzpicture}
+\par\vspace*{100\p@}}
+\makeatother
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	HYPERLINKS IN THE DOCUMENTS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usepackage[hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor= ocre,bookmarksopen=false,pdftitle={Title},pdfauthor={Author},CJKbookmarks=true]{hyperref}
+\usepackage{bookmark}
+\bookmarksetup{
+open,
+numbered,
+addtohook={%
+\ifnum\bookmarkget{level}=0 % chapter
+\bookmarksetup{bold}%
+\fi
+\ifnum\bookmarkget{level}=-1 % part
+\bookmarksetup{color=ocre,bold}%
+\fi
+}
+}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	TIKZ LIBRARIES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usetikzlibrary{
+arrows,
+backgrounds,
+fit,
+chains,
+calc,
+decorations.pathmorphing,
+matrix,
+mindmap,
+positioning,
+shapes,
+decorations,
+shadows,
+trees
+}
+
+\tikzset{ >=stealth', help lines/.style={dashed, thick}, axis/.style={<->}, important line/.style={thick}, connection/.style={thick, dotted},}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	TIKZ FACTOR
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\tikzstyle{firstterm} = [circle, draw, fill=sthlmRed!20, text centered,minimum size=1cm]
+\tikzstyle{secondterm} = [circle, draw, fill=sthlmBlue!20, text centered, node distance=0.25cm,minimum size=1cm]
+\tikzstyle{terms} = [rectangle, draw, fill=sthlmDarkGrey!20, text centered, node distance=0.25cm,minimum size=1cm]
+\tikzstyle{factoradd} = [rectangle, draw=none, text centered, node distance=0.25cm,minimum size=1cm]
+\tikzstyle{multiply} = [rectangle, draw, fill=sthlmDarkGrey!20, text centered, minimum height=0.75cm,minimum size=1cm]
+\tikzstyle{add} = [rectangle, draw, fill=sthlmGreen!20, text centered, minimum height=0.75cm,minimum size=1cm]
+\tikzstyle{line} = [draw, color=black!50, -latex']
+% Define the style for the red dotted boxes
+\tikzset{factordotted/.style={draw=sthlmPurple!50!white, line width=1pt, dash pattern=on 1pt off 4pt on 6pt off 4pt, inner sep=4mm, rectangle, rounded corners}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	WORKFLOW SETUP: SIMPLIFYING EXPRESSIONS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\tikzstyle{operation} = [rectangle, draw, fill=sthlmBlue!40, text centered, rounded corners]
+\tikzstyle{function} = [rectangle, draw, fill=sthlmPurple!40, text centered, rounded corners]
+\tikzstyle{notation} = [rectangle, draw, fill=sthlmGreen!40, text centered, rounded corners]
+\tikzstyle{algorithm} = [rectangle, draw, fill=sthlmOrange!40, text centered, rounded corners]
+\tikzstyle{delim} = [rectangle, draw, fill=sthlmYellow!40, text centered, rounded corners]
+\tikzstyle{property} = [rectangle, draw, fill=sthlmRed!40, text centered, rounded corners]
+\tikzstyle{hide} = [rectangle, draw, fill=sthlmGrey, text centered, rounded corners]
+\tikzstyle{active} = [rectangle, draw, fill=sthlmDarkGrey, text=white, text centered, rounded corners]
+
+\tikzset{functiondotted/.style={draw=sthlmPurple!50!white, line width=1pt,
+                               dash pattern=on 1pt off 4pt on 6pt off 4pt,
+                                inner sep=4mm, rectangle, rounded corners}}
+
+\tikzset{productdotted/.style={draw=sthlmBlue!50!white, line width=1pt,
+                               dash pattern=on 1pt off 4pt on 6pt off 4pt,
+                                inner sep=4mm, rectangle, rounded corners}}
+
+\tikzset{sumdotted/.style={draw=sthlmRed!50!white, line width=1pt,
+                               dash pattern=on 1pt off 4pt on 6pt off 4pt,
+                                inner sep=4mm, rectangle, rounded corners}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	WORKFLOW SETUP TRIGONOMETRIC EQUATIONS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\tikzstyle{decision} = [diamond, draw, fill=sthlmGreen!20,
+    text width=4.5em, text badly centered, node distance=1.2cm, inner sep=0pt]
+\tikzstyle{abscissa} = [rectangle, draw, fill=sthlmBlue!20,
+    text width=8em, text centered, rounded corners, node distance=1.2cm, minimum height=2.8em]
+\tikzstyle{ordinate} = [rectangle, draw, fill=sthlmRed!20,
+    text width=8em, text centered, rounded corners, node distance=1.2cm, minimum height=2.8em]
+\tikzstyle{task} = [rectangle, draw, fill=sthlmPurple!20,
+   minimum width=8em, text centered, rounded corners, node distance=1.2cm, minimum height=2.8em]
+\tikzstyle{pointcircle} = [circle, draw, fill=sthlmDarkGrey!20, text centered, node distance=1cm]
+% Define the style for the red dotted boxes
+  \tikzset{bluedotted/.style={draw=sthlmBlue!50!white, line width=1pt,
+                               dash pattern=on 1pt off 4pt on 6pt off 4pt,
+                                inner sep=4mm, rectangle, rounded corners}}
+% Define the style for the red dotted boxes
+  \tikzset{reddotted/.style={draw=sthlmRed!50!white, line width=1pt,
+                               dash pattern=on 1pt off 4pt on 6pt off 4pt,
+                                inner sep=4mm, rectangle, rounded corners}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	Derivative Workflow
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=	
+\tikzstyle{point} = [rectangle, draw, fill=sthlmBlue!40, text centered,rounded corners]
+\tikzstyle{limit} = [rectangle, draw, fill=sthlmPurple!40, text centered,rounded corners]
+\tikzstyle{class} = [rectangle, draw, fill=sthlmGreen!40, text centered, rounded corners]
+\tikzstyle{intervals} = [rectangle, draw, fill=sthlmOrange!40, text centered, rounded corners]
+\tikzstyle{fd} = [rectangle, draw, fill=sthlmRed!40, text centered, rounded corners]
+\tikzstyle{secondderivative} = [circle, draw, fill=sthlmGrey,radius=0.5, text width=1em, node distance =2.5cm]
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	General Workflow
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=	
+\tikzstyle{bluerbox} = [rectangle, draw, fill=sthlmBlue!40, text centered,rounded corners]
+\tikzstyle{purplerbox} = [rectangle, draw, fill=sthlmPurple!40, text centered,rounded corners]
+\tikzstyle{greenrbox} = [rectangle, draw, fill=sthlmGreen!40, text centered, rounded corners]
+\tikzstyle{orangerbox} = [rectangle, draw, fill=sthlmOrange!40, text centered, rounded corners]
+\tikzstyle{redrbox} = [rectangle, draw, fill=sthlmRed!40, text centered, rounded corners]
+\tikzstyle{circlenode} = [circle, draw, fill=sthlmGrey,radius=0.5, text width=1em, node distance =2.5cm]
+\tikzstyle{line} = [draw, very thick, color=black!50, -latex']
+\tikzstyle{dashline} = [draw, very thick, dash pattern=on 1pt off 4pt on 6pt off 4pt,inner sep=4mm,color=black!50, -latex']
+
+%--------------------------------------------
+%
+%	III.  THE DOCUMENT
+%
+%--------------------------------------------
+
+\begin{document}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	CHAPTER
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\chapter{数值实验题3：实验3.1}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	SECTION:
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\section{实现代码}
+
+\begin{python}
+import numpy as np
+import pandas as pd
+from scipy.optimize import leastsq
+import matplotlib.pyplot as plt
+
+
+class PolyLeastSquaresFitting:
+    """Applies a polynomial least squares fitting to data, by default,
+    the power index of polynomial is 3.
+
+    Tries to make the choice of basis function and weight more easier
+
+    Attributes:
+        __init__: A function initializing the class object
+        read_data: A function loading data to be fitted
+        fit: A function applying specific fit to data
+        plot_result: A function displaying the multiply fitting results
+    """
+
+    def __init__(self, generate_flag=True, power_index=3):
+        """Initializes the class object by parameter assignment"""
+        self.generate_flag = generate_flag
+        self.data_path = None
+        self.X = None
+        self.y = None
+        self.y_fitted = None
+        self.power_index = power_index
+        self.res = None
+
+    def read_data(self):
+        """Loads prepared data to fit"""
+        if self.generate_flag:
+            self.X = np.linspace(-1, 2, 7)
+            self.y = np.array([
+                -4.447, -0.452, 0.551, 0.048, -0.447, 0.549, 4.552
+            ])
+        else:
+            print("Please specify th file path of data: ")
+            self.data_path = input()
+            data = pd.read_txt(self.data_path)
+            try:
+                self.X = data["X"]
+                self.y = data["y"]
+            except IndexError:
+                print(
+                    "Please check the formation of data file." +
+                    "Make sure the column name of independent variable" +
+                    " and dependent variable is named as X, y respectively"
+                )
+
+
+    def fit(self):
+        """Applies polynomial least squares fitting"""
+        def func(x, params):
+            """Specifies the formation of fit function"""
+            a1, a2, a3, a4 = params
+            return a1 + a2 * x + a3 * x ** 2 + a4 * x ** 3
+
+        def residuals(params, y, x):
+            """Specifies the formation of residuals between fitted value and real value"""
+            return y - func(x, params)
+
+        params0 = np.array([1, 1, 1, 1])
+        self.res = leastsq(residuals, params0, args=(self.y, self.X))
+        self.y_fitted = func(self.X, self.res[0])
+
+    def plot_result(self):
+        """Plots specific results"""
+        def plot_params():
+            """Plots fitted parameters"""
+            print("The fitted parameters is listed below: ")
+            for ind, param in enumerate(self.res[0]):
+                print("The fitted value of a" + "{} is: {}".format(ind, param))
+
+        def plot_se():
+            """Plots square error"""
+            se = ((self.y - self.y_fitted) ** 2).sum()
+            print("The square error of fitting is {}".format(se))
+
+        def plot_fittedCurve():
+            """Plots fitted curve"""
+            if self.power_index == 3:
+                plt.plot(self.X, self.y, "ro", label="Real Data");
+                plt.plot(self.X, self.y_fitted, "b-", label="Fitted curve by poly least squares with 3 power");
+                plt.legend();
+                plt.show();
+            else:
+                pass
+
+        plot_params()
+        plot_se()
+        plot_fittedCurve()
+
+
+case = PolyLeastSquaresFitting()
+case.read_data()
+case.fit()
+case.plot_result()
+\end{python}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	SECTION:
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\section{结果与分析}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[height=6.0cm,width=9.0cm]{3.1_1.png}
+\caption{拟合曲线和实际曲线}
+\label{1}
+\end{figure}
+
+\begin{definition}[数值结果]\textit{ }\\
+\textit{拟合参数}
+
+得到的拟合参数$a_{0}$, $a_{1}$, $a_{2}$, $a_{3}$依次如1.1所示：
+
+\begin{equation}
+\begin{split}
+a_{0} = 0.549 \\
+a_{1} = -3.968 \\
+a_{2} = -2.998 \\
+a_{3} = 1.999
+\end{split}
+\end{equation}
+\textit{平方误差}
+
+由平方误差公式，$SE = \sum_{i=0}^{n} (y_{i, real} - y_{i, fitted})^{2}$计算得，拟合曲线的平方误差和为$2.176 E^{-5}$
+
+\end{definition}
+
+
+\chapter{数值实验题5：实验5.1}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	SECTION:
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\section{实现代码}
+
+\begin{python}
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+class RungeKutta:
+    """Applies a Runge-Kutta to solve differential equation group, by default,
+    the oder of is Runge-Kutta 4.
+
+    Attributes:
+        __init__: A function initializing the class object
+        fit: A function solving specific equation
+        plot_result: A function displaying the multiply fitting results
+    """
+
+    def __init__(self, x0=0, y0=1, params=-50, order=4, step=0.01):
+        """Initializes the class object by parameter assignment"""
+        self.x0 = x0
+        self.y0 = y0
+        self.params = params
+        self.x_list = []
+        self.y_sol = []
+        self.y_exact = None
+        self.order = order
+        self.step = step
+        self.res = None
+
+    def fit(self):
+        """Applies polynomial least squares fitting"""
+        def load_equ(y, x):
+            """Loads equation to solve"""
+            a = self.params
+            return a * y - a * x + 1
+
+        def runge_kutta_4(y, x, dx, func):
+            """ Applies 4 oder runge-kutta algorithm"""
+            k1 = dx * func(y, x)
+            k2 = dx * func(y + 0.5 * k1, x + 0.5 * dx)
+            k3 = dx * func(y + 0.5 * k2, x + 0.5 * dx)
+            k4 = dx * func(y + k3, x + dx)
+            return y + (k1 + 2 * k2 + 2 * k3 + k4) / 6.
+
+        if self.order == 4:
+            x = self.x0
+            y = self.y0
+            while x < 1:
+                y = runge_kutta_4(y, x, self.step, load_equ)
+                x += self.step
+                self.x_list.append(x)
+                self.y_sol.append(y)
+
+    def plot_result(self):
+        """Plots specific results"""
+        self.y_exact = [np.exp(self.params * x_i) + x_i for x_i in self.x_list]
+
+        def plot_se():
+            """Plots square error"""
+            se = ((np.array(self.y_exact) - np.array(self.y_sol)) ** 2)
+            plt.figure(num=1)
+            plt.plot(self.x_list, se, "k-", label="Square Error");
+            plt.legend();
+            plt.show();
+
+        def plot_solvedValue():
+            """Plots simulated value for each point"""
+            if self.order == 4:
+                table = pd.DataFrame(
+                    {
+                        "Selected_point": self.x_list,
+                        "Exact_Data_Point": self.y_exact,
+                        "Solve_Data_Point": self.y_sol
+                    }
+                )
+                print("The comparison table between exact value and " +
+                    "solved data point is printed here: ")
+                print(table)
+            else:
+                pass
+
+        def plot_solvedCurve():
+            """Plots solved curve"""
+            if self.order == 4:
+                plt.figure(num=2)
+                plt.plot(
+                    self.x_list,
+                    np.log10(np.array(self.y_exact)),
+                    "ro",
+                    MarkerFaceColor="w",
+                    MarkerEdgeColor="r",
+                    MarkerSize=5,
+                    label="Exact Solution, a=-50"
+                );
+                plt.plot(
+                    self.x_list,
+                    np.log10(np.array(self.y_sol)),
+                    "r-",
+                    label="Solved curve by 4 order R-K, a=-50"
+                );
+                plt.legend();
+                plt.ylabel("log10(y)")
+                plt.show();
+            else:
+                pass
+
+        plot_se()
+        plot_solvedValue()
+        plot_solvedCurve()
+
+
+case = RungeKutta()
+case.fit()
+case.plot_result()
+\end{python}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	SECTION:
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\section{结果与分析}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[height=6.0cm,width=9.0cm]{5.1_1.png}
+\caption{不同参数下的精确解和计算结果}
+\label{2}
+\end{figure}
+
+\begin{definition}[(1) 参数讨论]\textit{ }\\
+
+如图2.1所示，分别赋予参数$a$一个小的正值，一个大的正值，一个绝对值小的负值和一个绝对值大的负值，可知在$a=50$时不能得到很好的收敛。四阶R-K方法稳定域可表达为$-2.785 \le \lambda h \le 0$，应用于本题得到参数$a$范围可表达为$-278.5 \le a \le 0$，结合题设条件得$-50 \le a \le 0$。因此，当参数$a$取超过0的数值，由于超出了4 阶R-K的稳定域结果收敛性相对较差。
+
+\end{definition}
+
+\begin{figure}[!htbp]
+\centering
+\subfloat[精确解和计算结果，a=-35, h=0.1]{\includegraphics[width=8.0cm]{5.1_2.png}}
+\subfloat[等距的10个点，a=-35, h=0.1]{\includegraphics[width=8.0cm]{5.1_3.png}}\\
+\subfloat[精确解和计算结果，a=-35, h=0.05]{\includegraphics[width=8.0cm]{5.1_4.png}}
+\subfloat[等距的10个点，a=-35, h=0.05]{\includegraphics[width=8.0cm]{5.1_5.png}}
+\caption{不同步长的结果}
+\end{figure}
+
+\begin{definition}[(2) 步长讨论]\textit{ }\\
+
+依题意，取$a=-35$，四阶R-K方法稳定域可表达为$-2.785 \le \lambda h \le 0$，应用于本题得到步长$h$范围可表达为$0 \le h \le 0.0797$，为满足题设要求，分别取步长$h = 0.1$和$h = 0.05$两种情况进行计算。如图2.2所示，均从0开始按各自的步长取等距的10 个点，对比结果，显然前者不如后者计算稳定，故一般的为保证计算稳定收敛，步长以稳定区间内为宜。
+
+\end{definition}
+
+\chapter{数值实验题8：实验8.1}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	SECTION:
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\section{实现代码}
+
+\begin{python}
+import numpy as np
+
+
+class ConditionNumber:
+    """Applies an algorithm to calculate the condition number of any matrix.
+
+    Attributes:
+        __init__: A function initializing the class object
+        read_data: A function loading matrix data
+        get_condition_number: A function call to calculate condition number
+        plot_result: A function displaying calculation results
+    """
+
+    def __init__(self, shape, generate_flag=True, hilbert_flag=False):
+        """Initializes the class object by parameter assignment"""
+        self.generate_flag = generate_flag
+        self.Hilbert_flag = hilbert_flag
+        self.shape = shape
+        self.X = None
+        self.conditionNumber = None
+
+    def read_data(self):
+        """Loads prepared data to fit"""
+        if self.generate_flag:
+            self.X = np.random.rand(*self.shape)
+        elif self.Hilbert_flag:
+            self.X = np.zeros(self.shape)
+            for i in range(self.shape[0]):
+                for j in range(self.shape[1]):
+                    self.X[i, j] = 1 / (i + j + 1)
+        else:
+            pass
+
+    def get_condition_number(self):
+        """Calculates condition number"""
+        self.conditionNumber = np.linalg.cond(self.X)
+
+    def plot_result(self):
+        """Plots specific results"""
+
+        def plot_conditionNumbert():
+            """Plots square error"""
+            print("The matrix is: ")
+            print(self.X)
+            print("The shape of this matrix is {}".format(self.shape))
+            print("The condition number of this matrix is {}".format(self.conditionNumber))
+
+        plot_conditionNumbert()
+
+
+np.set_printoptions(threshold=10)
+case = ConditionNumber(shape=(27, 27))
+case.read_data()
+case.get_condition_number()
+case.plot_result()
+\end{python}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	SECTION:
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\section{结果与分析}
+
+\begin{figure}[!htbp]
+\centering
+\subfloat[三维方阵]{\includegraphics[width=7.0cm]{8.1_1.png}}\vspace{0.2cm}
+\subfloat[九维方阵]{\includegraphics[width=7.0cm]{8.1_2.png}}\\
+\subfloat[二十七维方阵]{\includegraphics[width=7.0cm]{8.1_3.png}}\vspace{0.2cm}
+\subfloat[八十一维方阵]{\includegraphics[width=7.0cm]{8.1_4.png}}
+\caption{不同步长的结果}
+\end{figure}
+
+\begin{definition}[(1) 不同维度矩阵的条件数]\textit{ }\\
+
+通过对代码$case = ConditionNumber(shape=(2, 2))$这一行中$shape$参数的逐渐赋值，依次得到随机生成的升维矩阵，简化起见，这里仅对方阵进行实验，如图3.1所示，随着方阵维度的升高，条件数随之增大，问题更加病态。
+
+\end{definition}
+
+\begin{definition}[(2) Hilbert矩阵作为矩阵特征值问题的条件数]\textit{ }\\
+
+依题取九维Hilbert方阵计算，得到如图所示的特征值和条件数。由于特征值差异过大时，即使输入沿着较大特征值的方向有微小的改变，也会导致最终的输出结果的较大改变，所以该九维Hilbert方阵条件数很大，问题病态。
+
+\end{definition}
+
+\begin{figure}  
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=10cm]{8.1_5.png}\\
+  \caption{九维Hilbert矩阵的特征值和条件数}
+  %\label{}
+\end{figure}
+
+\end{document}
