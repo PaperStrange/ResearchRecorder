@@ -16,15 +16,23 @@
 
 * 在网独基础上验证文献中改变孔隙率分布的效果
 
-:pencil: 验证不同电流密度下的模拟水分布结果的合理性
+:pencil: 验证模拟水分布结果的合理性
+
+ideas | origin | descriptions
+------------ | ------------- | -------------
+PEM中膜态水靠近阳极和靠近阴极分布的不同 | [paper](https://www.sciencedirect.com/science/article/pii/S0360128510000511?via%3Dihub) | On the other hand, the EOD effect also causes drying out of the portions of membrane close to the anode side, resulting unevenly distributed water across the membrane and large ohmic loss close to the anode side.
 
 :pencil: 发现流动方向上孔隙率变化对水传输影响不大，要想获得更低更均匀的水分布可能需要同时调整流动方向和垂直于流动方向的孔隙率分布和GDL的`各向异性`
+
+ideas | origin | descriptions
+------------ | ------------- | -------------
+垂直于流动方向的孔隙率分布 | [paper](https://www.sciencedirect.com/science/article/pii/S0360319917346426) | Large pore facilitates the gas diffusion and small pore has positive effect on the flooding [8]. Pore gradient GDL combines these advantages. Moreover, the pore gradient generates capillary pressure gradient that drives the liquid water toward the channel
 
 * 找到合适的优化指标
 
 ideas | origin | descriptions
 ------------ | ------------- | -------------
-产生的水和加湿所需的水之差 | 《PEM燃料电池：理论与实践》，纸质书 | 具体参考P101图示.P99的计算案例
+产生的水和加湿所需的水之差 | 《PEM燃料电池：理论与实践》(纸质书) | 具体参考P101图示.P99的计算案例
 电流密度分布指标 | ？ | ？
 
 * 找到一种寻找孔隙率最优排布的算法
@@ -33,7 +41,7 @@ ideas | origin | descriptions
 
 resources | genre | descriptions
 ------------ | ------------- | -------------
-reference these | original_paper | link [here](https://pdfs.semanticscholar.org/da24/280dfcd767524fb1a1702f50f388ca0d4082.pdf) 
+reference these | original_paper | derivation and proof, link [here](https://pdfs.semanticscholar.org/da24/280dfcd767524fb1a1702f50f388ca0d4082.pdf)
 codes | python | github repo link [here](https://github.com/fchollet/nelder-mead/blob/master/nelder_mead.py)
 codes | python_package | scipy, introduction [here](https://blog.csdn.net/zhoudi2010/article/details/54584495)
 
