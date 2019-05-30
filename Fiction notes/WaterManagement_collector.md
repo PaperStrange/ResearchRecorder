@@ -54,6 +54,20 @@ Section1 |  Section2 | Description |
 结论 | 
 结论1 | -- | Such as...
 \>>> | \>>>
+`点子1`（来源：[unrecorded theses](https://www.sciencedirect.com/science/article/pii/S0360128510000511)） |
+全称 |  | 优化时工况参数的选取依据
+有价值的规律 |
+规律1 | temperature | Since both the electrochemical reaction kinetics and membrane conductivity can be improved at higher temperatures, operating the cell at the highest possible temperature while maintaining the membrane durability is critical to achieve better performance, and therefore the normal operating temperature for PEMFC is usually controlled at about 80 degree celsius.
+规律2 | ? | ?
+优点（创意） |
+优点1 | -- | ?
+结论 | ?
+结论1 | -- | ?
+----------------------------------------------------------------------------------------------------------------------|
+The water flooding is most severe in
+cathode CL due to the fact that water is produced in this layer and
+the electro-osmotic drag (EOD) also causes water migrating form
+anode CL to cathode CL. 
 
 ## Fragments <a name="fragments"></a>
 
