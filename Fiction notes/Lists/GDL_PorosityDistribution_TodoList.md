@@ -23,18 +23,15 @@ ideas | origin | descriptions
 ------------ | ------------- | -------------
 
 
-* 发现流动方向上孔隙率变化对水传输影响不大，要想获得更低更均匀的水分布可能需要同时调整流动方向和垂直于流动方向的孔隙率分布和GDL的`各向异性`
+* 找到合适的优化目标和优化算法
+
+:pencil: 目标
 
 ideas | origin | descriptions
 ------------ | ------------- | -------------
-
-
-* 找到合适的优化指标和优化算法
-
-:pencil: 指标
-
-ideas | origin | descriptions
------------- | ------------- | -------------
+阴极催化层中的水淹现象 | [review paper](https://www.sciencedirect.com/science/article/pii/S0360128510000511) | The water flooding is most severe in cathode CL due to the fact that water is produced in this layer and the electro-osmotic drag (EOD) also causes water migrating form anode CL to cathode CL.
+\>>> | \>>>
+? | [review paper](https://www.sciencedirect.com/science/article/pii/S0360128510000511) | Thus, the predominant direction of the diffussional and hydraulicwater fluxes can be arranged opposite to that of EOD water flux, balancing the water in the membrane.
 产生的水和加湿所需的水之差 | 《PEM燃料电池：理论与实践》(纸质书) | 具体参考P101图示.P99的计算案例
 电流密度分布指标 | ？ | ？
 
@@ -47,3 +44,5 @@ codes | python | github repo link [here](https://github.com/fchollet/nelder-mead
 codes | python_package | scipy, introduction [here](https://blog.csdn.net/zhoudi2010/article/details/54584495)
 
 ## Fragments <a name="fragments"></a>
+
+* 发现流动方向上孔隙率变化对水传输影响不大，要想获得更低更均匀的水分布可能需要同时调整流动方向和垂直于流动方向的孔隙率分布和GDL的`各向异性`
