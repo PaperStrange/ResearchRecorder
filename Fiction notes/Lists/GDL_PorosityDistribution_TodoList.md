@@ -30,9 +30,9 @@ ideas | origin | descriptions
 ideas | origin | descriptions
 ------------ | ------------- | -------------
 阴极催化层中的水淹现象 | [review paper](https://www.sciencedirect.com/science/article/pii/S0360128510000511) | The water flooding is most severe in cathode CL due to the fact that water is produced in this layer and the electro-osmotic drag (EOD) also causes water migrating form anode CL to cathode CL.
-孔隙率对GDL排水的影响 |  | 均衡调整孔隙率对扩散排水（体现在D表达式中）和孔隙壁面疏水（亲疏水体现在毛细压力的θ上）的影响
+孔隙率对GDL排水的影响 |  | 平衡调整孔隙率对扩散排水（体现在D表达式中）和孔隙壁面亲疏水（亲疏水体现在毛细压力的θ上）的影响
 \>>> | \>>>
-PEM保持合适的水合程度 | [review paper](https://www.sciencedirect.com/science/article/pii/S0360128510000511) | Thus, the predominant direction of the diffussional and hydraulicwater fluxes can be arranged opposite to that of EOD water flux, balancing the water in the membrane.
+PEM保持合适的水合程度 | [review paper](https://www.sciencedirect.com/science/article/pii/S0360128510000511) | Thus, the predominant direction of the diffussional and hydraulicwater fluxes can be arranged opposite to that of EOD water flux, balancing the water in the membrane, that is, effective water removal in GDL without affecting the membrane hydration is critical.
 产生的水和加湿所需的水之差 | 《PEM燃料电池：理论与实践》(纸质书) | 具体参考P101图示.P99的计算案例
 电流密度分布指标 | ？ | ？
 
