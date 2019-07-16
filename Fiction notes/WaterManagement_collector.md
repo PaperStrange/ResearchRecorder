@@ -1,8 +1,5 @@
 <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
 
-TODO 2019/5/9: extract from "JiaoKui. Water transport in polymer electrolyte membrane fuel cells"
-
-
 HZQ: Y/M/D, "DOCS: ..."
 
 ### Table of Contents
