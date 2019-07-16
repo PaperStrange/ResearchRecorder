@@ -1,4 +1,4 @@
-:memo: Lists 2019/7/16: 
+:memo: Lists 2019/7/16: targets needs quick and tuning test(Such as distribution of current density)
 
 ### Table of Contents
 
