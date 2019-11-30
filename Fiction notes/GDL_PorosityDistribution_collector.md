@@ -1,6 +1,7 @@
 <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
 
 HZQ: 2019/4/23, "DOCS: add arrangement structure"
+HZQ: 2019/11/30, "DOCS: leave the room of full template structure"
 
 ### Table of Contents
 
@@ -18,6 +19,8 @@ Section1 |  Section2 | Description |
 | | 特点一（差异性） | 基于AI算法的`数值`优化
 | | 特点二（可行性） | python库能提供的目前通过神经网络求解ODE的开源案例（[参考链接]()）
 | | 特点三（价值性） | 配合AI算法，输入从微分方程组得到的多组解和对应参数，输出最优参数组合
+*---投票区---* |
+某某某，年/月/日 | -- | Such as...
 *---补充区---* | 
 HZQ，2019/4/11 |  -- | 出发点：AI在PEMFC如何落地的尝试
 \>>> | \>>>
@@ -28,7 +31,7 @@ HZQ，2019/4/11 |  -- | 出发点：AI在PEMFC如何落地的尝试
 | | 特点二（可行性） | 存在不同类别压损的经验公式和相关的实验数据；python库能提供的目前流行的ML回归算法
 | | 特点三（价值性） | 得到不同工况下通过降低压损提高输出功率的针对性最佳策略
 *---补充区---* |
-HZQ，2019/4/15 | -- | 出发点：AI在PEMFC如何落地的尝试
+HZQ，2019/4/15 | -- | 出发点：AI算法在PEMFC如何落地的尝试
 
 ## Within Subject <a name="within"></a>
 
@@ -36,7 +39,14 @@ Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
 `点子1`（来源：[most creative[1]](./GDL_PorosityDistribution.md#Representative_theses)） |
 全称 |  | 阴极GDL孔隙率分布和CL的Pt含量的影响
-*---补充区---* | 
+关键词 |  | 
+| | 特点一（差异性） | Such as...
+| | 特点二（可行性） | Such as...
+| | 特点三（价值性） | Such as...
+*---投票区---* |
+某某某，年/月/日 | -- | Such as...
+*---补充区---* |
+某某某，年/月/日 | -- | Such as...
 有价值的规律 |
 规律1 | mechanism | the non-uniform distribution of current density within the MEA accelerates the degradations of membrane, catalyst and carbon, which shortens the life span of PEM fuel cells
 规律2 | mechanism | For PEM fuel cells operated at different power levels/loads, the reaction activity and mass transport rates vary spatially in the CLs, due to the nonuniform distribution of reactant gases and change in void space for gas transport, initiated by the formation of liquid water
@@ -52,6 +62,14 @@ Section1 |  Section2 | Description |
 \>>> | \>>>
 `点子2`（来源：[most valuable[1]](./GDL_PorosityDistribution.md#Representative_theses)） |
 全称 |  | 阴极GDL孔隙率分布的影响
+关键词 |  | 
+| | 特点一（差异性） | Such as...
+| | 特点二（可行性） | Such as...
+| | 特点三（价值性） | Such as...
+*---投票区---* |
+某某某，年/月/日 | -- | Such as...
+*---补充区---* |
+某某某，年/月/日 | -- | Such as...
 有价值的规律 |
 规律1 | porosity_GDL | it is expected that reducing the porosity of the GDL generally leads to an increase in the electronic conductivity of the GDL; however, it may retard the supply of the reactant gases in the GDL
 规律2 | porosity_GDL | the low porosity region near the catalyst results in higher capillary force, and on the other hand, the high porosity region near the channels results in lower capillary force. Therefore, a net capillary force reduced by a porosity gradient in the GDL forces the water to move from the catalyst toward the channels through the GDL
@@ -64,6 +82,14 @@ Section1 |  Section2 | Description |
 \>>> | \>>>
 `点子3`（来源：[most valuable[2]](./GDL_PorosityDistribution.md#Representative_theses)） |
 全称 |  | 阴极GDL孔隙率分布的影响
+关键词 |  | 
+| | 特点一（差异性） | Such as...
+| | 特点二（可行性） | Such as...
+| | 特点三（价值性） | Such as...
+*---投票区---* |
+某某某，年/月/日 | -- | Such as...
+*---补充区---* |
+某某某，年/月/日 | -- | Such as...
 有价值的规律 |
 规律1 | -- | apart from a continuous porosity, whose distribution mathematically provides the most flexibility to meet a desired uniformity of local current density variation, it is often convenient in practice to fabricate GDLs with discrete regions of piecewise constant porosity distribution *PS: research results here suggested that it may be sufficient to use a piecewise constant porosity GDL in practice*
 规律2 | -- | the reactant gases required for chemical reactions at high cell voltages are less than that consumed at low cell voltages and hence variation in the reactant gases concentration is also smaller along the channel for higher cell voltages

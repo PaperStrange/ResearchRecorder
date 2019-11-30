@@ -1,6 +1,6 @@
 <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
 
-HZQ: Y/M/D, "DOCS: ..."
+HZQ: 2019/11/30, "DOCS: leave the room of full template structure", "DOCS: modify the paper address corresponding to the folder change"
 
 ### Table of Contents
 
@@ -34,25 +34,16 @@ Section1 |  Section2 | Description |
 
 Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
-`点子X` | | 
-全称 |  | 比如...
+`点子1`（来源：[most general[1]](./3D_flow_field.md#Representative_theses)） |
+全称 |  | 优化时工况参数的选取依据
 关键词 |  | 
 | | 特点一（差异性） | Such as...
 | | 特点二（可行性） | Such as...
 | | 特点三（价值性） | Such as...
 *---投票区---* |
 某某某，年/月/日 | -- | Such as...
-*---补充区---* | 
+*---补充区---* |
 某某某，年/月/日 | -- | Such as...
-有价值的规律 |
-规律1 | 类别 | Such as...
-优点（创意） |
-优点1 | -- | Such as...
-结论 | 
-结论1 | -- | Such as...
-\>>> | \>>>
-`点子1`（来源：[unrecorded theses](https://www.sciencedirect.com/science/article/pii/S0360128510000511)） |
-全称 |  | 优化时工况参数的选取依据
 有价值的规律 |
 规律1 | temperature | Since both the electrochemical reaction kinetics and membrane conductivity can be improved at higher temperatures, operating the cell at the highest possible temperature while maintaining the membrane durability is critical to achieve better performance, and therefore the normal operating temperature for PEMFC is usually controlled at about 80 degree celsius.
 规律2 | temperature | the water vapour becomes more and more unsaturated as temperature is increased, leading to the decrease in equilibrium water content. The drying out of the ionomer at elevated temperature suggests that the membrane needs to be better hydrated at higher temperature.
@@ -65,6 +56,14 @@ Section1 |  Section2 | Description |
 结论1 | -- | ?
 ----------------------------------------------------------------------------------------------------------------------|
 全称 |  | 水传输
+关键词 |  | 
+| | 特点一（差异性） | Such as...
+| | 特点二（可行性） | Such as...
+| | 特点三（价值性） | Such as...
+*---投票区---* |
+某某某，年/月/日 | -- | Such as...
+*---补充区---* |
+某某某，年/月/日 | -- | Such as...
 有价值的规律 |
 规律1 | concept | The non-frozen water in ionomer can also be classified into surface and bulk water [73,74], or vapour and liquid [75-77]. Surface water strongly interacts with H+SO3- and is mostly likely present close to the charged sites SO3-[78]. Bulk water is mainly identified as liquid which are loosely bound to SO3-.
 规律2 | PEM | The vibration of the polymer side chains enhances the proton transport, explaining why the polymer membranes exhibit higher proton conductivity than most of the other solid proton conductors (without vibration of the polymer side chains) (e.g. ceramics).
@@ -86,6 +85,29 @@ Section1 |  Section2 | Description |
 规律18 | General | The transport of water in the ionomer of membrane and CL involves diffusion, EOD and hydraulic permeation, and it is largely coupled with proton transport. In the pores of GDL and CL and in flow channel, the transport of water vapour involves diffusion and convection. The capillary force alsoplays an important role in liquidwater transport in the pores of GDL and CL. The Knudsen diffusion can be neglected in the pores of GDL and in flow channel, but needs to be considered in the much smaller pores of CL. Phase change processes take place until the equilibrium states are achieved. However, as mentioned in Section 2.5, whether phase equilibriums of water exist remain debated because of the presence and arbitrary transport of liquid water, especially in the heterogeneous structures of CL and GDL.
 规律19 | GDL, Cl | A hydrophobic surface is simply more effective in facilitating liquid transport than a hydrophilic surface due to the reduced contact area between liquid and wall. This is why that the GDL and CL are usually treated to be hydrophobic by adding PTFE to them to expel water.
 规律20 | concept | The contact angle can be considered as a measure of the surface wettability
+优点（创意） |
+优点1 | -- | ?
+结论 | ?
+结论1 | -- | ? 
+----------------------------------------------------------------------------------------------------------------------|
+全称 |
+关键词 |  | 
+| | 特点一（差异性） | Such as...
+| | 特点二（可行性） | Such as...
+| | 特点三（价值性） | Such as...
+*---投票区---* |
+某某某，年/月/日 | -- | Such as...
+*---补充区---* |
+某某某，年/月/日 | -- | Such as... 
+有价值的规律 |
+规律1 | 类别 | Such as...
+优点（创意） |
+优点1 | -- | Such as...
+结论 | 
+结论1 | -- | Such as...
+\>>> | \>>>
+`点子2`（来源：[most general[2]](./3D_flow_field.md#Representative_theses)） |
+全称 |  | 流场优化理论
 优点（创意） |
 优点1 | -- | ?
 结论 | ?
