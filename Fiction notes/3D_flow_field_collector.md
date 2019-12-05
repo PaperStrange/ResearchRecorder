@@ -9,6 +9,12 @@ HZQ: 2019/11/30, "DOCS: leave the room of full template structure", "DOCS: modif
 3. [Fragments](#fragments)
 
 ## Cross-Subject <a name="cross"></a>
+* Summary Table
+
+Name |  Origin | Notes |
+------------ | ------------- | -------------
+
+* Detailed Table
 
 Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
@@ -31,6 +37,24 @@ Section1 |  Section2 | Description |
 \>>> | \>>>
 
 ## Within Subject <a name="within"></a>
+* Summary Table
+
+Name |  Origin | Notes |
+------------ | ------------- | -------------
+Multi-phase simulation of proton exchange membrane fuel cell with 3D fine mesh flow field | [url link](https://onlinelibrary.wiley.com/doi/pdf/10.1002/er.4215) | (1) parallel flow pattern, the liquid water will be drawn to the upper surface because the gradually reduced cross‐sectional area in small repeated unit increases gas flow velocity and decreases pressure. Then, the liquid water will be blown out along the upper surface of BP to prevent blocking the gas flow path from flow field into porous electrodes
+-- | -- | (2) the decreased contact area between GDL and flow field (from 50% to 14.77% in this study) may increase the ohmic loss in PEMFC
+Experimental and numerical analysis of a three-dimensional flow field for PEMFCs | [url link](https://linkinghub.elsevier.com/retrieve/pii/S0306261917302313) | (1) serpentine flow pattern, its periodic waved structure introduces cyclical variation of local flow direction, local flow velocity and local pressure, thus leading to enhanced forced-convection.
+-- | -- | (2) Waved structure can introduce forced convection at the through-plane direction which can greatly facilitate the oxygen transport and water removal
+-- | -- | (3) Experiment validation and simulation on polarization curve 
+Flow field design with 3D geometry for proton exchange membrane fuel cells | [url link](https://linkinghub.elsevier.com/retrieve/pii/S1359431118348750) | (1) 3-channel serpentine flow pattern, the channel depth gradually decreases from upstream region to downstream region, which is able to increase flow velocity at both in-plane and through-plane directions to overcome the severe water flooding at downstream region
+-- | -- | (2) The waved channel geometry is able to induce convection flux at through-plane direction, which greatly enhances oxygen supply from flow channel to catalyst layer, resulting in a higher local concentration and thus smaller concentration polarization
+-- | -- | (3) Flow velocity at through-plane direction, changes from positive to negative, indicating the existence of local vortex. Such vortex is capable of removing the water accumulated in the GDL via inertial effect that in turn improves the water management
+Numerical study on a novel 3D cathode flow field and evaluation criteria for the PEM fuel cell design | [url link](https://linkinghub.elsevier.com/retrieve/pii/S036054421831421X) | (1) PEC(performance evaluation criterion) is proposed in this paper to evaluate the relationship between the transport effect and the pressure drop, EMTC(effective mass transfer coefficient) is proposed in this paper to evaluate the detailed reactant transport to help designing specific channel structures
+-- | -- | (2) Compared to parallel straight flow field, 3D flow field enhances reactant transport greatly in both flow direction and perpendicular to flow direction (from channel to catalyst layer), in the cost of little increase in pressure drop and uneven reactant distribution. However, the porous bottom ribs of 3D flow fields help to form even reactant distribution.
+Performance enhancement in a proton exchange membrane fuel cell with a novel 3D flow field | [url link](https://linkinghub.elsevier.com/retrieve/pii/S1359431119354316) | (1) The 3D flow field is composed of several straight flow units arranged in a staggered manner with an inclination at the end, and the transition areas and sub-channels between the flow units are subjected to hydrophilic treatment
+-- | -- | (2) 
+ 
+* Detailed Table
 
 Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
