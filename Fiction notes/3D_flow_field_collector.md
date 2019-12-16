@@ -59,7 +59,7 @@ Performance enhancement in a proton exchange membrane fuel cell with a novel 3D 
 Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
 `点子1`（来源：[most general[1]](./3D_flow_field.md#Representative_theses)） |
-全称 |  | 优化时工况参数的选取依据
+全称 |  | 优化参数范围
 关键词 |  | 
 | | 特点一（差异性） | Such as...
 | | 特点二（可行性） | Such as...
