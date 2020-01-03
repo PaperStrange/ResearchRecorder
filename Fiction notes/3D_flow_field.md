@@ -23,9 +23,9 @@ Overall descriptions here
 
 * most general
 
-[1] [Jiao, K. and X. Li, Water transport in polymer electrolyte membrane fuel cells. Progress in Energy and Combustion Science, 2011. 37(3): p. 221-291](https://www.sciencedirect.com/science/article/pii/S0360128510000511)
+[1] [Yan, X., et al., Flow field design with 3D geometry for proton exchange membrane fuel cells. Applied Thermal Engineering, 2019. 147: p. 1107-1114.](https://www.sciencedirect.com/science/article/pii/S1359431118348750?via%3Dihub)
 
-[2] [Wang, J., Theory and practice of flow field designs for fuel cell scaling-up: A critical review. Applied Energy, 2015. 157: p. 640-663](https://www.sciencedirect.com/science/article/pii/S0306261915000380)
+[2] [Li, W., et al., Experimental and numerical analysis of a three-dimensional flow field for PEMFCs. Applied Energy, 2017. 195: p. 278-288.](https://www.sciencedirect.com/science/article/pii/S0306261917302313?via%3Dihub)
 
 <!-- 6. [To-dos](#to-dos) -->
 <!-- ## To-dos<a name="to-dos"></a>
