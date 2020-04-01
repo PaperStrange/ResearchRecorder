@@ -21,10 +21,11 @@ Overall descriptions here
 
 ## Representative_theses<a name="representatives"></a>
 
-* adjective
+* most general
 
-[1] the formation of your citation here
-[2] ...
+[1] [Yan, X., et al., Flow field design with 3D geometry for proton exchange membrane fuel cells. Applied Thermal Engineering, 2019. 147: p. 1107-1114.](https://www.sciencedirect.com/science/article/pii/S1359431118348750?via%3Dihub)
+
+[2] [Li, W., et al., Experimental and numerical analysis of a three-dimensional flow field for PEMFCs. Applied Energy, 2017. 195: p. 278-288.](https://www.sciencedirect.com/science/article/pii/S0306261917302313?via%3Dihub)
 
 <!-- 6. [To-dos](#to-dos) -->
 <!-- ## To-dos<a name="to-dos"></a>

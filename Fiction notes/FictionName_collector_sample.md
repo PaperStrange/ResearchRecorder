@@ -9,6 +9,12 @@ HZQ: Y/M/D, "DOCS: ..."
 3. [Fragments](#fragments)
 
 ## Cross-Subject <a name="cross"></a>
+* Summary Table
+
+Name |  Origin | Notes |
+------------ | ------------- | -------------
+
+* Detailed Table
 
 Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
@@ -23,7 +29,7 @@ Section1 |  Section2 | Description |
 *---补充区---* | 
 某某某，年/月/日 | -- | Such as...
 有价值的规律 |
-规律1 | 类别 | Such as...
+类别 | Such as...
 优点（创意） |
 优点1 | -- | Such as...
 结论 | 
@@ -31,6 +37,12 @@ Section1 |  Section2 | Description |
 \>>> | \>>>
 
 ## Within Subject <a name="within"></a>
+* Summary Table
+
+Name |  Origin | Notes |
+------------ | ------------- | -------------
+
+* Detailed Table
 
 Section1 |  Section2 | Description |
 ------------ | ------------- | -------------
@@ -45,7 +57,7 @@ Section1 |  Section2 | Description |
 *---补充区---* | 
 某某某，年/月/日 | -- | Such as...
 有价值的规律 |
-规律1 | 类别 | Such as...
+类别 | Such as...
 优点（创意） |
 优点1 | -- | Such as...
 结论 | 
